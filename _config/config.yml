@@ -1,0 +1,22 @@
+---
+Name: mfa-skip
+---
+#XD\MFARemember\Models\LoginDevice:
+#  expiry: 60
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\MFA\Service\EnforcementManager:
+    class: XD\MFARemember\Injector\EnforcementManager
+
+SilverStripe\MFA\Authenticator\LoginHandler:
+  extensions:
+    - XD\MFARemember\Extensions\LoginHandlerExtension
+SilverStripe\MFA\Service\RegisteredMethodManager:
+  extensions:
+    - XD\MFARemember\Extensions\RegisteredMethodManagerExtension
+SilverStripe\Security\Member:
+  extensions:
+    - XD\MFARemember\Extensions\MemberExtension
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - XD\MFARemember\Extensions\ContentControllerExtension

@@ -1,0 +1,6 @@
+nl:
+  XD\MFARemember\Toast:
+    Title: 'Browser onthouden'
+    Message: 'Als je deze browser opslaat, hoef je geen code in te voeren wanneer je je weer aanmeldt vanuit deze browser.'
+    Remember: 'Browser opslaan'
+    AlwaysAsk: 'Niet opslaan'
