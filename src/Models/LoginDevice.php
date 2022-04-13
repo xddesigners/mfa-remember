@@ -77,7 +77,7 @@ class LoginDevice extends DataObject
     public static function check($member)
     {
         $device = self::getCurrent($member);
-        return (boolean)$device->Remember === self::REMEMBER_YES;
+        return $device && $device->Remember === self::REMEMBER_YES;
     }
 
     public function updateDevice()
