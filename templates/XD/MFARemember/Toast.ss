@@ -32,14 +32,14 @@
 <div class="xd-mfa-remember-toast">
     <div class="xd-mfa-remember-toast__message">
         <h6><%t XD\MFARemember\Toast.Title 'Remember browser' %></h6>
-        <p><%t XD\MFARemember\Toast.Message 'If you save this browser, you don't have to enter a code when you log in again from this browser.' %></p>
+        <p><%t XD\MFARemember\Toast.Message 'If you save this browser, you don’t have to enter a code when you log in again from this browser.' %></p>
     </div>
     <div class="xd-mfa-remember-toast__actions">
         <a class="xd-mfa-remember-toast__action" href="{$Link('rememberDevice')}">
             <%t XD\MFARemember\Toast.Remember 'Save this browser' %>
         </a>
         <a class="xd-mfa-remember-toast__action" href="{$Link('alwaysAsk')}">
-            <%t XD\MFARemember\Toast.AlwaysAsk 'Don't save' %>
+            <%t XD\MFARemember\Toast.AlwaysAsk 'Don’t save' %>
         </a>
     </div>
 </div>
