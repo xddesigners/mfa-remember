@@ -116,7 +116,7 @@ class LoginDevice extends DataObject
     {
         $service = self::config()->get('geocodeService');
         if( $service ) {
-            $apiURL = $service . $this->IPAdress;
+            $apiURL = $service . $this->IPAddress;
             $ch = curl_init($apiURL);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $apiResponse = curl_exec($ch);
